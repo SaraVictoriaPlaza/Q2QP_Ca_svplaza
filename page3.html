@@ -1,0 +1,87 @@
+<!DOCTYPE html> <!--This page is already 50% since it already has the base code of the page itself.-->
+<html lang="en"><!--the only thing that is currently missing is the content-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body3">
+    <header>
+        <nav>
+          <img class="favicon" src="images/favicon.jpg" alt="favicon">
+            <span class="links">
+                <a href="index.html">HOME</a>
+                <a href="page2.html">WHAT DO WE DO</a>
+                <a id="link1" href="page3.html">ABOUT US</a>
+            </span>
+        </nav>
+    </header>
+<div class="section"> <!--Hover effect for content with each mouseover on tabs-->
+  <button class="seclinks" onmouseover="openSection(event, 'Who we are')">Who we are</button>
+  <button class="seclinks" onmouseover="openSection(event, 'Mission')">Mission</button>
+  <button class="seclinks" onmouseover="openSection(event, 'Vision')">Vision</button>
+  <button class="seclinks" onmouseover="openSection(event, 'How to help')">How to help</button>
+</div>
+<div id="Who we are" class="seccontent">
+  <h1>WHO WE ARE</h1>
+  <p>We are the filipinos who support the no to jeepney phase out campaign.
+    And we this organizations have been managed to defend and strive this advocacy
+    until we reach victory. Although this imprint as a challenge, giving up was never 
+    a choice; We as a citizen of the Philippines, should and must defend our own trademarks.
+  </p>
+</div>
+<div id="Mission" class="seccontent">
+  <h1>MISSION</h1>
+  <p>
+    "What we propose is to address the root cause of poverty and inequality. Under neoliberal globalization, labor flexibilization and modernization schemes have become rampant resulting to job insecurity. With 4.7 percent conservative estimate of unemployment rate in the country and whopping 7.7 million (18 percent) underemployed Filipinos in January 2017 alone, the productive forces remain stagnant and industrial development is stunted. Over 30 million Filipinos consider themselves as extremely poor, while the total net worth of the richest continue to grow. The economy also suffers backwardness and underdevelopment, being export-oriented and import-dependent."
+  </p> 
+  <p>Officer, R. (2017, October 1). #NoToJeEpneyPhaseOut - EILER. EILER. <a href="https://eiler.ph/press/notojeepneyphaseout/">https://eiler.ph/press/notojeepneyphaseout/</a></p>
+</div>
+<div id="Vision" class="seccontent">
+  <h1>VISION</h1>
+  <p>"We demand that the government uphold the workers’ rights and the national economic interest by amending department orders, plans, and agreements that are bias towards capitalists and public-private partnerships. We must advocate for pro-poor comprehensive urban and rural transportation planning that complements national industrialization and genuine agrarian reform. The government must resume with the peace talks and push for the Comprehensive Agreement on Social and Economic Reforms (CASER), which tackles land reform and workers’ welfare."</p>
+  <p>Officer, R. (2017, October 1). #NoToJeEpneyPhaseOut - EILER. EILER. <a href="https://eiler.ph/press/notojeepneyphaseout/">https://eiler.ph/press/notojeepneyphaseout/</a></p>
+</div>
+<div id="How to help" class="seccontent">
+    <h1>HOW TO HELP</h1>
+    <p> To help is to be given in a lot of ways. With these organizations, it's encouraged
+      to help in two ways. One on which is to promote the article the campaign has assessed with.
+      It talks about their plans and actions on the no to jeepney phase out action as they provide 
+      betterment of solution for all (Officer, 2017). Second is to sign the petition that is attached on the reference
+    bellow. The petition is asking for everyone's help in order to have the issue assessed with the higher
+  commitees.   </p>
+  <p>Officer, R. (2017, October 1). #NoToJeEpneyPhaseOut - EILER. EILER. <a href="https://eiler.ph/press/notojeepneyphaseout/">https://eiler.ph/press/notojeepneyphaseout/</a></p>
+  <p>PETITION LINK: <a href="https://www.change.org/p/president-rodrigo-duterte-no-to-jeepney-phaseout-and-public-utility-vehicle-modernization-program">https://www.change.org/p/president-rodrigo-duterte-no-to-jeepney-phaseout-and-public-utility-vehicle-modernization-program</a></p>
+  </div>
+<div class="clearfix"></div>
+<!--Sorry po sir, but this is java =script, i'll avoid using out of topic codes next time, but this one
+only i needed javascript-->
+<script> 
+function openSection(evt, sectionName) 
+{
+  var i, seccontent, seclinks;
+  seccontent = document.getElementsByClassName("seccontent");
+  for (i = 0; i < seccontent.length; i++) 
+  {
+    seccontent[i].style.display = "none";
+  }
+  seclinks = document.getElementsByClassName("seclinks");
+  for (i = 0; i < seclinks.length; i++) 
+  {
+    seclinks[i].className = seclinks[i].className.replace(" active", "");
+  }
+  document.getElementById(sectionName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+    <div class="footer3">
+        <p>All Rights Reserved. Sara Victoria Plaza.</p>
+        <div class="socmeds">
+          <a href="https://www.facebook.com/sara.plaza.9843499"><div id="facebook"class="icons" ></div></a>
+          <a href="https://github.com/SaraVictoriaPlaza"><div id="github"class="icons" ></div></a>
+          <a href="https://www.tiktok.com/@rms2lostairpods?is_from_webapp=1&sender_device=pc"><div id="tiktok"class="icons" ></div></a>
+        </div>
+    </div>
+</body>
+</html>
